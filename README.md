@@ -1,11 +1,14 @@
-# Yandex Cloud Kubernetes Terraform module
+<!-- BADGES -->
+[![Github release](https://img.shields.io/github/v/release/kvendingoldo/terraform-opensearch?style=for-the-badge)](https://github.com/kvendingoldo/terraform-opensearch/releases) [![Contributors](https://img.shields.io/github/contributors/kvendingoldo/terraform-opensearch?style=for-the-badge)](https://github.com/kvendingoldo/terraform-opensearch/graphs/contributors) ![maintenance status](https://img.shields.io/maintenance/yes/2024.svg?style=for-the-badge) 
 
-Terraform module which creates Yandex Cloud Kubernetes resources.
+# OpenSearch Terraform module
+
+Terraform module which creates OpenSearch resources.
 
 ## Examples
 
 Examples codified under
-the [`examples`](https://github.com/terraform-yacloud-modules/terraform-yandex-kubernetes/tree/main/examples) are intended
+the [`examples`](https://github.com/terraform-yacloud-modules/kvendingoldo/terraform-opensearch/tree/main/examples) are intended
 to give users references for how to use the module(s) as well as testing/validating changes to the source code of the
 module. If contributing to the project, please be sure to make any appropriate updates to the relevant examples to allow
 maintainers to test your changes and to keep the examples up to date for users. Thank you!
@@ -66,4 +69,4 @@ No outputs.
 ## License
 
 Apache-2.0 Licensed.
-See [LICENSE](https://github.com/terraform-yacloud-modules/terraform-yandex-kubernetes/blob/main/LICENSE).
+See [LICENSE](https://github.com/terraform-yacloud-modules/kvendingoldo/terraform-opensearch/blob/main/LICENSE).
