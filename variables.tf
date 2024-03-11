@@ -81,3 +81,15 @@ variable "monitor_files" {
   type        = set(string)
   default     = []
 }
+
+variable "dashboard_objects" {
+  description = "A map of all dashboard objects to create."
+  type        = map(any)
+  default     = {}
+}
+
+variable "dashboard_objects_files" {
+  description = "A set of all dashboard objects files to create."
+  type        = set(string)
+  default     = []
+}

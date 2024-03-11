@@ -40,4 +40,11 @@ locals {
     replace(basename(filename), "/\\.(ya?ml|json)$/", "") =>
     length(regexall("\\.ya?ml$", filename)) > 0 ? yamldecode(file(filename)) : jsondecode(file(filename))
   }, var.monitors)
+
+
+  dashboard_object = merge({
+    for filename in var.dashboard_objects_files :
+    replace(basename(filename), "/\\.(ya?ml|json)$/", "") =>
+    length(regexall("\\.ya?ml$", filename)) > 0 ? yamldecode(file(filename)) : jsondecode(file(filename))
+  }, var.dashboard_objects)
 }
