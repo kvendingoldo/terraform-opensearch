@@ -1,0 +1,43 @@
+---
+name: 0-example
+type: monitor
+enabled: true
+schedule:
+  period:
+    interval: 15
+    unit: MINUTES
+inputs:
+  - search:
+      indices:
+        - example-index-*
+      query:
+        size: 0
+        query:
+          bool:
+            must:
+              - match:
+                  fields.RequestPath: "/public/v1/example"
+              - match:
+                  fields.ObjectResultType: "InternalServerErrorObjectResult"
+triggers:
+  - name: "0-example"
+    severity: "0"
+    condition:
+      script:
+        source: "ctx.results[0].hits.total.value > 0"
+    actions:
+      - name: Slack
+        destination_id: "KIjY4Bi3WaD-nlE9das21aa8"
+        message_template:
+          source: |
+            - Description: Any description for example monitor.
+            - Trigger: {{ctx.trigger.name}}
+            - Severity: *{{ctx.trigger.severity}}*
+            - Period: *{{ctx.periodStart}}* - *{{ctx.periodEnd}}*"
+            - Suggested solution: Any solution for example monitor issue.
+          lang: mustache
+        throttle_enabled: false
+        subject_template:
+          source: |
+            Monitor *{{ ctx.monitor.name }}* just entered alert status. Please investigate the issue.
+          lang: mustache

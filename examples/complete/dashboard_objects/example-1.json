@@ -1,0 +1,13 @@
+[
+  {
+    "_id": "index-pattern:example1",
+    "_type": "doc",
+    "_source": {
+      "type": "index-pattern",
+      "index-pattern": {
+        "title": "example1-*",
+        "timeFieldName": "timestamp"
+      }
+    }
+  }
+]

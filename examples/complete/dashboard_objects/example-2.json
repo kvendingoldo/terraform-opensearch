@@ -1,0 +1,28 @@
+[
+  {
+    "_source": {
+      "visualization": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"fields.RequestPath:\\\"/public/v1/example\\\" and fields.ObjectResultType:\\\"InternalServerErrorObjectResult\\\"\",\"language\":\"kuery\"},\"highlightAll\":true,\"version\":true,\"aggs\":{\"2\":{\"date_histogram\":{\"field\":\"@timestamp\",\"fixed_interval\":\"30s\",\"time_zone\":\"Europe/Moscow\",\"min_doc_count\":1}}},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "title": "Example 2",
+        "version": 1
+      }
+    },
+    "_id": "90b73e30-d634-11ee-84f7-b3fb0e37532a",
+    "migrationVersion": {
+      "search": "7.9.3"
+    },
+    "references": [
+      {
+        "id": "35b5b690-b91f-11ee-b44f-fb2f540f1429",
+        "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+        "type": "index-pattern"
+      }
+    ],
+    "type": "search",
+    "updated_at": "2024-03-11T07:01:44.826Z",
+    "version": "WzY4LDQ3XQ=="
+  }
+]
