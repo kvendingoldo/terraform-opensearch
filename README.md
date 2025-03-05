@@ -1,5 +1,5 @@
 <!-- BADGES -->
-[![Github release](https://img.shields.io/github/v/release/kvendingoldo/terraform-opensearch?style=for-the-badge)](https://github.com/kvendingoldo/terraform-opensearch/releases) [![Contributors](https://img.shields.io/github/contributors/kvendingoldo/terraform-opensearch?style=for-the-badge)](https://github.com/kvendingoldo/terraform-opensearch/graphs/contributors) ![maintenance status](https://img.shields.io/maintenance/yes/2024.svg?style=for-the-badge) 
+[![Github release](https://img.shields.io/github/v/release/kvendingoldo/terraform-opensearch?style=for-the-badge)](https://github.com/kvendingoldo/terraform-opensearch/releases) [![Contributors](https://img.shields.io/github/contributors/kvendingoldo/terraform-opensearch?style=for-the-badge)](https://github.com/kvendingoldo/terraform-opensearch/graphs/contributors) ![maintenance status](https://img.shields.io/maintenance/yes/2025.svg?style=for-the-badge) 
 
 # OpenSearch Terraform module
 
